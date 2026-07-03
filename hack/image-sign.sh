@@ -17,7 +17,7 @@
 set -eu
 
 # Inputs (env vars):
-#   IMAGE_REPO     registry+namespace, e.g. ghcr.io/kube-bind (required)
+#   IMAGE_REPO     registry+namespace, e.g. ghcr.io/kbind-dev (required)
 #   OUTPUT_DIR     directory containing <component>.metadata.json files (required)
 #   COMPONENTS     space-separated component names; default: "konnector backend"
 #   COSIGN_ARGS    extra args for `cosign sign` (e.g. -a sha=... -a ref=...)

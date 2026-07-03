@@ -17,7 +17,7 @@
 set -eu
 
 # Inputs (env vars):
-#   IMAGE_REPO          registry+namespace, e.g. ghcr.io/kube-bind or kube-bind (required)
+#   IMAGE_REPO          registry+namespace, e.g. ghcr.io/kbind-dev or kube-bind (required)
 #   PLATFORMS           buildx platform list, default: linux/<host arch>
 #   IMAGE_TAGS          space-separated tag suffixes, default: $REV
 #   PUSH                true|false; default: true if PLATFORMS is multi-arch, else false (--load)
