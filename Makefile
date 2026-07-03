@@ -26,7 +26,7 @@ export UGET_VERSIONED_BINARIES = true
 # Image build configuration
 # REV is the short git sha of latest commit.
 export REV ?= $(shell git rev-parse --short HEAD)
-export IMAGE_REPO ?= kube-bind
+export IMAGE_REPO ?= kbind-dev
 
 BOILERPLATE_VERSION := 201dcad9616c117927232ee0bc499ff38a27023e
 CODE_GENERATOR_VERSION := v2.4.0
@@ -468,7 +468,7 @@ image-sign: ## Cosign-sign pushed images by digest (requires cosign + image-push
 release-images: image-push image-sign ## Build, push, and sign release images
 
 # Kind cluster configuration
-KIND_CLUSTER ?= kube-bind
+KIND_CLUSTER ?= kbind
 DOCKER_REPO ?= $(IMAGE_REPO)
 
 .PHONY: kind-load
