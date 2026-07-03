@@ -17,7 +17,7 @@
 set -eu
 
 # Inputs (env vars):
-#   IMAGE_REPO      registry+namespace, e.g. ghcr.io/kube-bind (required)
+#   IMAGE_REPO      registry+namespace, e.g. ghcr.io/kbind-dev (required)
 #   REV             short git sha (required if CHART_VERSION is unset)
 #   CHART_VERSION   chart version string; default: 0.0.0-$REV
 #                   (must match a previously-packaged chart in ./bin/)
